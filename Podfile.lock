@@ -1,0 +1,32 @@
+PODS:
+  - Fakery (4.1.1)
+  - Nimble (8.0.7)
+  - Quick (2.2.0)
+  - SwiftLint (0.39.2)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - Fakery
+  - Nimble
+  - Quick
+  - SwiftLint
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Fakery
+    - Nimble
+    - Quick
+    - SwiftLint
+    - Swinject
+
+SPEC CHECKSUMS:
+  Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
+  Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: 5bc7d26f18082dc9f762c3a503d8a4404913bc05
+
+COCOAPODS: 1.9.1
