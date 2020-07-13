@@ -15,6 +15,13 @@
 		8BAEF2052456DC350075AFD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAEF2042456DC350075AFD3 /* Preview Assets.xcassets */; };
 		8BAEF2082456DC350075AFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAEF2062456DC350075AFD3 /* LaunchScreen.storyboard */; };
 		8BAEF2132456DC360075AFD3 /* ACStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAEF2122456DC360075AFD3 /* ACStockTests.swift */; };
+		8BB8F6732456E3FE00FC75C0 /* DailyPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8F6722456E3FE00FC75C0 /* DailyPrice.swift */; };
+		8BB8F6752456E41500FC75C0 /* WeeklyPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8F6742456E41500FC75C0 /* WeeklyPrice.swift */; };
+		8BB8F6782456E61E00FC75C0 /* PricePredictionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8F6772456E61E00FC75C0 /* PricePredictionWorker.swift */; };
+		8BC58CA72458374E0095EF67 /* FluctuatingPricePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC58CA62458374E0095EF67 /* FluctuatingPricePredictor.swift */; };
+		8BC58CA9245837660095EF67 /* LargeSpikePricePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC58CA8245837660095EF67 /* LargeSpikePricePredictor.swift */; };
+		8BC58CAB2458377A0095EF67 /* DecreasingPricePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC58CAA2458377A0095EF67 /* DecreasingPricePredictor.swift */; };
+		8BC58CAD245838100095EF67 /* SmallSpikePricePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC58CAC245838100095EF67 /* SmallSpikePricePredictor.swift */; };
 		EA4297B8D1610523181DE75C /* Pods_ACStock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43862322832C0F72130ED538 /* Pods_ACStock.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +52,13 @@
 		8BAEF20E2456DC360075AFD3 /* ACStockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACStockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAEF2122456DC360075AFD3 /* ACStockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACStockTests.swift; sourceTree = "<group>"; };
 		8BAEF2142456DC360075AFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB8F6722456E3FE00FC75C0 /* DailyPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPrice.swift; sourceTree = "<group>"; };
+		8BB8F6742456E41500FC75C0 /* WeeklyPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyPrice.swift; sourceTree = "<group>"; };
+		8BB8F6772456E61E00FC75C0 /* PricePredictionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricePredictionWorker.swift; sourceTree = "<group>"; };
+		8BC58CA62458374E0095EF67 /* FluctuatingPricePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluctuatingPricePredictor.swift; sourceTree = "<group>"; };
+		8BC58CA8245837660095EF67 /* LargeSpikePricePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSpikePricePredictor.swift; sourceTree = "<group>"; };
+		8BC58CAA2458377A0095EF67 /* DecreasingPricePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecreasingPricePredictor.swift; sourceTree = "<group>"; };
+		8BC58CAC245838100095EF67 /* SmallSpikePricePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallSpikePricePredictor.swift; sourceTree = "<group>"; };
 		DCC1FA356CAB90D3A462E0D3 /* Pods_ACStockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACStockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +114,8 @@
 		8BAEF1FA2456DC330075AFD3 /* ACStock */ = {
 			isa = PBXGroup;
 			children = (
+				8BB8F6762456E60400FC75C0 /* Workers */,
+				8BB8F6712456E3D700FC75C0 /* Entities */,
 				8BAEF1FB2456DC330075AFD3 /* AppDelegate.swift */,
 				8BAEF1FD2456DC330075AFD3 /* SceneDelegate.swift */,
 				8BAEF1FF2456DC330075AFD3 /* ContentView.swift */,
@@ -126,6 +142,35 @@
 				8BAEF2142456DC360075AFD3 /* Info.plist */,
 			);
 			path = ACStockTests;
+			sourceTree = "<group>";
+		};
+		8BB8F6712456E3D700FC75C0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8F6722456E3FE00FC75C0 /* DailyPrice.swift */,
+				8BB8F6742456E41500FC75C0 /* WeeklyPrice.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8BB8F6762456E60400FC75C0 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				8BC58CA52458370F0095EF67 /* Predictors */,
+				8BB8F6772456E61E00FC75C0 /* PricePredictionWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		8BC58CA52458370F0095EF67 /* Predictors */ = {
+			isa = PBXGroup;
+			children = (
+				8BC58CA62458374E0095EF67 /* FluctuatingPricePredictor.swift */,
+				8BC58CA8245837660095EF67 /* LargeSpikePricePredictor.swift */,
+				8BC58CAA2458377A0095EF67 /* DecreasingPricePredictor.swift */,
+				8BC58CAC245838100095EF67 /* SmallSpikePricePredictor.swift */,
+			);
+			path = Predictors;
 			sourceTree = "<group>";
 		};
 		9ADF7EDA9C2058A5ADAEE576 /* Pods */ = {
@@ -344,9 +389,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB8F6782456E61E00FC75C0 /* PricePredictionWorker.swift in Sources */,
 				8BAEF1FC2456DC330075AFD3 /* AppDelegate.swift in Sources */,
+				8BC58CAB2458377A0095EF67 /* DecreasingPricePredictor.swift in Sources */,
+				8BB8F6732456E3FE00FC75C0 /* DailyPrice.swift in Sources */,
+				8BB8F6752456E41500FC75C0 /* WeeklyPrice.swift in Sources */,
+				8BC58CA72458374E0095EF67 /* FluctuatingPricePredictor.swift in Sources */,
 				8BAEF1FE2456DC330075AFD3 /* SceneDelegate.swift in Sources */,
 				8BAEF2002456DC330075AFD3 /* ContentView.swift in Sources */,
+				8BC58CA9245837660095EF67 /* LargeSpikePricePredictor.swift in Sources */,
+				8BC58CAD245838100095EF67 /* SmallSpikePricePredictor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
